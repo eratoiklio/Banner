@@ -1,6 +1,12 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
 .main-width {
     width: 1200px;
     margin: 0 auto;
+    position: relative;
 }
 p {
     display: inline-block;
@@ -23,43 +29,69 @@ p {
     animation: starimg1 5s linear, starimg2 5s linear 5s, starimg3 5s linear 10s, starimg4 5s linear 15s, starimg5 2.5s 2 linear 15s;
 }
 
-p.star {
-    top: -150px;
-    animation: starpar1 5s linear, starpar2 5s linear 5s, starpar3 5s linear 15s;
-}
+
 
 .image.squer {
     background: url("../images/sprite.png") 0 -100px;
     animation: squerimg1 5s linear, squerimg2 5s linear 5s, squerimg3 5s linear 10s, squerimg4 5s linear 15s, squerimg5 2.5s 2 linear 15s;
-}
-p.squer {
-    top: -150px;
-    /*animation: starpar1 5s linear, starpar2 5s linear 5s, starpar3 5s linear 15s;*/
 }
 
 .image.hexagon {
     background: url("../images/sprite.png") -200px -100px;
     animation: hexagonimg1 5s linear, hexagonimg2 5s linear 5s, hexagonimg3 5s linear 10s, hexagonimg4 5s linear 15s, hexagonimg5 2.5s 2 linear 15s;
 }
-p.hexagon {
-    top: -150px;
-    /*animation: starpar1 5s linear, starpar2 5s linear 5s, starpar3 5s linear 15s;*/
-}
+
 .image.circle {
     background: url("../images/sprite.png") -300px -100px;
     animation: circleimg1 5s linear, circleimg2 5s linear 5s, circleimg3 5s linear 10s, circleimg4 5s linear 15s, circleimg5 2.5s 2 linear 15s;
 
 }
+p.star {
+    top: -150px;
+    animation: starpar1 5s linear, starpar2 10s linear 5s, starpar3 5s linear 15s;
+}
+p.squer {
+    top: -150px;
+    animation: squerpar1 5s linear, squerpar2 10s linear 5s, squerpar3 5s linear 15s;
+}
+p.hexagon {
+    top: -150px;
+    animation: hexagonpar1 5s linear, hexagonpar2 10s linear 5s, hexagonpar3 5s linear 15s;
+}
 p.circle {
     top: -150px;
-    /*animation: starpar1 5s linear, starpar2 5s linear 5s, starpar3 5s linear 15s;*/
+    animation: circlepar1 5s linear, circlepar2 10s linear 5s, circlepar3 5s linear 15s;
 }
-/*.image.test
-{
-    top: 400px;
-    background: url("../images/sprite.png") -200px -100px;
-}*/
 
+#sweet1
+{
+    opacity:0;
+    border: 1px solid gray;
+    padding: 5px;
+    display: inline-block;
+    position: absolute;
+    animation: animsweet1 16s linear 20s;
+}
+#sweet2
+{
+    opacity:0;
+    position: absolute;
+    top:150px;
+    left:500px;
+    display: inline-block;
+    animation: animsweetPart1 4s linear 20s,animsweetPart2 12s linear 24s;
+}
+
+#sweet3
+{
+    opacity:0;
+    position: absolute;
+    display: inline-block;
+    top: 300px;
+    left:500px;
+    animation: animsweetPart1 4s linear 20s,animsweetPart2 12s linear 24s;
+
+}
 @keyframes starimg1 {
     0% {
 
@@ -121,38 +153,7 @@ p.circle {
     }
 }
 
-@keyframes starpar1 {
-    0% {
-        top: -100px;
-        left: 450px;
-    }
-    100% {
-        top: 50px;
-        left: 450px;
-    }
-}
 
-@keyframes starpar2 {
-    0% {
-        top: 50px;
-        left: 450px;
-    }
-    100% {
-        top: 50px;
-        left: 1000px;
-    }
-}
-
-@keyframes starpar3 {
-    0% {
-        top: 50px;
-        left: 1000px;
-    }
-    100% {
-        top: 50px;
-        left: -1200px;
-    }
-}
 @keyframes squerimg1 {
     0% {
         top: -100px;
@@ -211,6 +212,7 @@ p.circle {
         background: url("../images/sprite.png") 0 0;
     }
 }
+
 @keyframes hexagonimg1 {
     0% {
         top: -100px;
@@ -325,5 +327,205 @@ p.circle {
     100% {
         transform: rotate(0deg);
         background: url("../images/sprite.png") -300px 0;
+    }
+}@keyframes starpar1 {
+    0% {
+        top: -100px;
+        left: 450px;
+    }
+    100% {
+        top: 50px;
+        left: 450px;
+    }
+}
+
+@keyframes starpar2 {
+    0% {
+        top: 50px;
+        left: 450px;
+    }
+    50% {
+        top: 50px;
+        left: 0;
+    }
+    100% {
+        top: 50px;
+        left: 0;
+    }
+}
+
+@keyframes starpar3 {
+    0% {
+        top: 50px;
+        left: 0;
+    }
+    100% {
+        top: 50px;
+        left: -1200px;
+    }
+}
+@keyframes squerpar1 {
+    0% {
+        top: -100px;
+        left: 450px;
+    }
+    100% {
+        top: 200px;
+        left: 450px;
+    }
+}
+
+@keyframes squerpar2 {
+    0% {
+        top: 200px;
+        left: 450px;
+    }
+    50% {
+        top: 200px;
+        left: 0px;
+    }
+    100% {
+        top: 200px;
+        left: 0px;
+    }
+}
+
+@keyframes squerpar3 {
+    0% {
+        top: 200px;
+        left: 0;
+    }
+    100% {
+        top: 200px;
+        left: 100vw;
+    }
+}
+@keyframes hexagonpar1 {
+    0% {
+        top: -100px;
+        left: 450px;
+    }
+    100% {
+        top: 350px;
+        left: 450px;
+    }
+}
+
+@keyframes hexagonpar2 {
+    0% {
+        top: 350px;
+        left: 450px;
+    }
+    50% {
+        top: 350px;
+        left: 0px;
+    }
+    100% {
+        top: 350px;
+        left: 0px;
+    }
+}
+
+@keyframes hexagonpar3 {
+    0% {
+        top: 350px;
+        left: 0px;
+    }
+    100% {
+        top: 350px;
+        left: -1200px;
+    }
+}
+
+@keyframes circlepar1 {
+    0% {
+        top: -100px;
+        left: 450px;
+    }
+    100% {
+        top: 500px;
+        left: 450px;
+    }
+}
+
+@keyframes circlepar2 {
+    0% {
+        top: 500px;
+        left: 450px;
+    }
+    50% {
+        top: 500px;
+        left: 0px;
+    }
+    100% {
+        top: 500px;
+        left: 0px;
+    }
+}
+
+@keyframes circlepar3 {
+    0% {
+        top: 500px;
+        left: 0px;
+    }
+    100% {
+        top: 500px;
+        left: 100vw;
+    }
+}
+@keyframes animsweetPart1 {
+    0% {
+        opacity:1;
+        transform: scale(0);
+
+    }
+    100% {
+        opacity:1;
+        transform: scale(1.5,1.5);
+    }}
+    @keyframes animsweetPart2 {
+    0% {
+        opacity:1;
+        transform: scale(1.5,1.5);
+    }
+    75% {
+        opacity:1;
+        transform: scale(1.5,1.5);
+    }
+    100% {
+        opacity:0;
+        transform: scale(0);
+    }
+}
+@keyframes animsweet1 {
+    0% {
+        opacity:1;
+        top:-100px;
+        left:0;
+        transform: scale(1.5,1.5);
+    }
+    25% {
+        opacity:1;
+        top:-100px;
+        left:0;
+        transform: scale(1.5,1.5);
+    }
+    50% {
+        opacity:1;
+        top:250px;
+        left:0;
+        transform: scale(1.5,1.5);
+    }
+    75% {
+        opacity:1;
+        top:250px;
+        left: 500px;
+        transform: scale(1.5,1.5);
+    }
+    100% {
+        opacity:0;
+        top:250px;
+        left: 500px;
+        transform: scale(0);
     }
 }
