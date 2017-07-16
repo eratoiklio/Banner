@@ -1,0 +1,329 @@
+.main-width {
+    width: 1200px;
+    margin: 0 auto;
+}
+p {
+    display: inline-block;
+    height: 100px;
+    line-height: 100px;
+    margin: 0;
+    position: absolute;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+    /*display: inline-block;*/
+    position: absolute;
+    top:-100px;
+}
+
+.image.star {
+    background: url("../images/sprite.png") -100px -100px;
+    animation: starimg1 5s linear, starimg2 5s linear 5s, starimg3 5s linear 10s, starimg4 5s linear 15s, starimg5 2.5s 2 linear 15s;
+}
+
+p.star {
+    top: -150px;
+    animation: starpar1 5s linear, starpar2 5s linear 5s, starpar3 5s linear 15s;
+}
+
+.image.squer {
+    background: url("../images/sprite.png") 0 -100px;
+    animation: squerimg1 5s linear, squerimg2 5s linear 5s, squerimg3 5s linear 10s, squerimg4 5s linear 15s, squerimg5 2.5s 2 linear 15s;
+}
+p.squer {
+    top: -150px;
+    /*animation: starpar1 5s linear, starpar2 5s linear 5s, starpar3 5s linear 15s;*/
+}
+
+.image.hexagon {
+    background: url("../images/sprite.png") -200px -100px;
+    animation: hexagonimg1 5s linear, hexagonimg2 5s linear 5s, hexagonimg3 5s linear 10s, hexagonimg4 5s linear 15s, hexagonimg5 2.5s 2 linear 15s;
+}
+p.hexagon {
+    top: -150px;
+    /*animation: starpar1 5s linear, starpar2 5s linear 5s, starpar3 5s linear 15s;*/
+}
+.image.circle {
+    background: url("../images/sprite.png") -300px -100px;
+    animation: circleimg1 5s linear, circleimg2 5s linear 5s, circleimg3 5s linear 10s, circleimg4 5s linear 15s, circleimg5 2.5s 2 linear 15s;
+
+}
+p.circle {
+    top: -150px;
+    /*animation: starpar1 5s linear, starpar2 5s linear 5s, starpar3 5s linear 15s;*/
+}
+/*.image.test
+{
+    top: 400px;
+    background: url("../images/sprite.png") -200px -100px;
+}*/
+
+@keyframes starimg1 {
+    0% {
+
+        top: -100px;
+        left: 550px;
+    }
+    100% {
+
+        top: 50px;
+        left: 550px;
+    }
+}
+
+@keyframes starimg2 {
+    0% {
+        top: 50px;
+        left: 550px;
+    }
+    100% {
+        top: 50px;
+        left: 1100px;
+    }
+}
+
+@keyframes starimg3 {
+    0% {
+        top: 50px;
+        left: 1100px;
+        background: url("../images/sprite.png") -100px 0;
+    }
+    100% {
+        top: 50px;
+        left: 1100px;
+        background: url("../images/sprite.png") -100px 0;
+    }
+}
+
+@keyframes starimg4 {
+    0% {
+        top: 50px;
+        left: 1100px;
+        background: url("../images/sprite.png") -100px 0;
+    }
+    100% {
+        top: 50px;
+        left: -1000px;
+        background: url("../images/sprite.png") -100px 0;
+    }
+}
+
+@keyframes starimg5 {
+    0% {
+        transform: rotate(0deg);
+        background: url("../images/sprite.png") -100px 0;
+    }
+    100% {
+        transform: rotate(360deg);
+        background: url("../images/sprite.png") -100px 0;
+    }
+}
+
+@keyframes starpar1 {
+    0% {
+        top: -100px;
+        left: 450px;
+    }
+    100% {
+        top: 50px;
+        left: 450px;
+    }
+}
+
+@keyframes starpar2 {
+    0% {
+        top: 50px;
+        left: 450px;
+    }
+    100% {
+        top: 50px;
+        left: 1000px;
+    }
+}
+
+@keyframes starpar3 {
+    0% {
+        top: 50px;
+        left: 1000px;
+    }
+    100% {
+        top: 50px;
+        left: -1200px;
+    }
+}
+@keyframes squerimg1 {
+    0% {
+        top: -100px;
+        left: 550px;
+    }
+    100% {
+        top: 200px;
+        left: 550px;
+    }
+}
+
+@keyframes squerimg2 {
+    0% {
+        top: 200px;
+        left: 550px;
+    }
+    100% {
+        top: 200px;
+        left: 1100px;
+    }
+}
+
+@keyframes squerimg3 {
+    0% {
+        top: 200px;
+        left: 1100px;
+        background: url("../images/sprite.png") 0 0;
+    }
+    100% {
+        top: 200px;
+        left: 1100px;
+        background: url("../images/sprite.png") 0 0;
+    }
+}
+
+@keyframes squerimg4 {
+    0% {
+        top: 200px;
+        left: 1100px;
+        background: url("../images/sprite.png") 0 0;
+    }
+    100% {
+        top: 200px;
+        left: 2000px;
+        background: url("../images/sprite.png") 0 0;
+    }
+}
+
+@keyframes squerimg5 {
+    0% {
+        transform: rotate(360deg);
+        background: url("../images/sprite.png") 0 0;
+    }
+    100% {
+        transform: rotate(0deg);
+        background: url("../images/sprite.png") 0 0;
+    }
+}
+@keyframes hexagonimg1 {
+    0% {
+        top: -100px;
+        left: 550px;
+    }
+    100% {
+        top: 350px;
+        left: 550px;
+    }
+}
+
+@keyframes hexagonimg2 {
+    0% {
+        top: 350px;
+        left: 550px;
+    }
+    100% {
+        top: 350px;
+        left: 1100px;
+    }
+}
+
+@keyframes hexagonimg3 {
+    0% {
+        top: 350px;
+        left: 1100px;
+        background: url("../images/sprite.png") -200px 0;
+    }
+    100% {
+        top: 350px;
+        left: 1100px;
+        background: url("../images/sprite.png") -200px 0;
+    }
+}
+
+@keyframes hexagonimg4 {
+    0% {
+        top: 350px;
+        left: 1100px;
+        background: url("../images/sprite.png") -200px 0;
+    }
+    100% {
+        top: 350px;
+        left: -1000px;
+        background: url("../images/sprite.png") -200px 0;
+    }
+}
+
+@keyframes hexagonimg5 {
+    0% {
+        transform: rotate(0deg);
+        background: url("../images/sprite.png") -200px 0;
+    }
+    100% {
+        transform: rotate(360deg);
+        background: url("../images/sprite.png") -200px 0;
+    }
+}
+@keyframes circleimg1 {
+    0% {
+        top: -100px;
+        left: 550px;
+    }
+    100% {
+        top: 500px;
+        left: 550px;
+    }
+}
+
+@keyframes circleimg2 {
+    0% {
+        top: 500px;
+        left: 550px;
+    }
+    100% {
+        top: 500px;
+        left: 1100px;
+    }
+}
+
+@keyframes circleimg3 {
+    0% {
+        top: 500px;
+        left: 1100px;
+        background: url("../images/sprite.png") -300px 0;
+    }
+    100% {
+        top: 500px;
+        left: 1100px;
+        background: url("../images/sprite.png") -300px 0;
+    }
+}
+
+@keyframes circleimg4 {
+    0% {
+        top: 500px;
+        left: 1100px;
+        background: url("../images/sprite.png") -300px 0;
+    }
+    100% {
+        top: 500px;
+        left: 2000px;
+        background: url("../images/sprite.png") -300px 0;
+    }
+}
+
+@keyframes circleimg5 {
+    0% {
+        transform: rotate(360deg);
+        background: url("../images/sprite.png") -300px 0;
+    }
+    100% {
+        transform: rotate(0deg);
+        background: url("../images/sprite.png") -300px 0;
+    }
+}
